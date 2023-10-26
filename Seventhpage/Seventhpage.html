@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,400;0,500;0,700;1,100&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,500;0,700;1,100;1,400&family=Outfit:wght@100;200;400;700&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,200;1,400;1,700&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Seventhpage.css">
+</head>
+<body>
+    <div class="d1">
+        <form>
+            <label for="Schema Name:" class="L1">Schema Name:</label>
+            <input type="text" id="Schema Name:" class="input1"> <label for="text" class="L2">Enter the name of the JSON Request / Response Schema to be processed</label>
+        </form>
+    </div>
+
+    <div>
+        <form action="Index.html">
+            <div>
+                <label for="COBOL Name:" class="L3">COBOL Name:</label>
+                <input type="text" id="COBOL Name" class="input2"> <label for="COBOL Name" class="L4">Enter the Name of the COBOL Copy/Include that will be created for these Schemas - up to 5 characters max (this and the Schema process will append 3 characters)</label>        
+            </div>
+
+            <div>
+                <label for="program name" class="L3">ProgramName:</label>
+                <input type="text" id="programName" class="input2"> <label for="ProgramName" class="L4">Enter the name of the program</label>        
+            </div>
+
+            <div>
+                <label for="Application Name" class="L3">ApplicationName:</label>
+                <input type="text" id="ApplicationName" class="input2"> <label for="Application Name" class="L4">Enter the 3 chanacter application name associated with this Schema</label>
+            </div>
+
+            <div>
+                <label for="Enviroment Name:" class="L3">Enviroment Name:</label> 
+                <select name="Enviroment Name:" id="Enviroment Name:" class="S1">
+                    <option value="DEV">DEV</option> 
+                </select>
+                <label for="" class="L4">Select the enviroment where the Schema resides</label>
+            </div>
+            <div>
+                <label for="String Max Lenght" class="L3">String Max Lenght:</label>
+                <input type="text" id="String Max Lenght" placeholder="80" class="input2"> <label for="String Max Lenght" class="L4">Enter the Maximum Character String Lenght This WebService will support (1 - 2M) <br> If left empty this will default to 80 characters </label>
+            </div>
+    
+            <div>
+                <label for="Inline Max Occurs" class="L3">Inline Max Occurs:</label>
+                <input type="text" id="Inline Max Occurs" placeholder="1" class="input2"> <label for="Inline Max Occurs" class="L4">Enter the Maximum Number of Inline Occurs This WebService will support (1 - 32760): </label>
+            </div>
+            <hr>
+            <div>
+                <label class="L3">DateTime EFormat</label><br>
+    
+                <label for="" class="Yes">Yes</label>
+                <input type="radio" value="Yes" id="Yes" name="title" class="input"><label for="" class="Yes1">Select Yes to have the date / time as numeric (default)</label><br>
+    
+                <label for="" class="Yes">No</label>
+                <input type="radio" value="No" id="No" name="title" class="input"> <label for="" class="Yes1">Or No to have the date / time as a string:</label>
+            </div>
+            <hr>
+
+            <button class="Btn">Process</button>
+        </form>
+    </div>
+
+</body>
+</html>

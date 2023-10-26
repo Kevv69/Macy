@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Firstpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,400;0,500;0,700;1,100&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,500;0,700;1,100;1,400&family=Outfit:wght@100;200;400;700&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,200;1,400;1,700&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Thirdpage.css">
 </head>
 <body>
     <div class="d1">
@@ -16,8 +16,9 @@
             <input type="text" id="WSDL NAME" class="input1"> <label for="text" class="L2">Enter the name of WSDL to be processed</label>
         </form>
     </div>
+
     <div class="d2">
-        <form action="Secondpage.html" method="get">
+        <form action="Fourthpage.html" method="get">
         <label for="program name" class="L3">ProgramName:</label>
         <input type="text" id="programName" class="input2"> <label for="ProgramName" class="L4">Enter the name of the program</label>
         
@@ -39,12 +40,12 @@
 
         <div>
             <label for="Request Name:" class="L3">Request Name:</label>
-            <input type="text" id="Request Name:" class="input3"> <label for="Request Name:" class="L5">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Request Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
+            <input type="text" id="Request Name:" class="input2"> <label for="Request Name:" class="L4">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Request Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
         </div>
 
         <div>
             <label for="Response Name:" class="L3">Response Name:</label>
-            <input type="text" id="Response Name:" class="input4"> <label for="Response Name:">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Response Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
+            <input type="text" id="Response Name:" class="input2"> <label for="Response Name:" class="L4">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Response Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
         </div>
         
         <div>
@@ -74,14 +75,23 @@
             <label for="" class="L3"> Transaction ID </label><br>
             
             <label for="" class="Yes">Yes</label>
-            <input type="radio" id="Yes" name="title1" class="input"> <label for="" class="Yes1">Select Yes to use standard ZPIH Transaction Id (Strongly Recommended),</label><br>
+            <input type="radio" id="Yes" name="title1" class="input"> <label for="" class="Yes1">Select Yes to use standard Zaaa Transaction Id (where aaa is the 3 character Application Name), - Strongly Recommended,</label><br>
 
-            <label for="" class="L3">No</label>
+            <label for="" class="Yes">No</label>
             <input type="radio" id="No" name="title1" class="input"> <label for="" class="Yes1">or No to supply your own Transaction Id</label>
         </div>
         <hr>
+        <label for="" class="L3">Specify Target Region</label><br>
+        <label for="" class="N1">Yes</label>
+        <input type="radio" id="Yes" class="input" name="No"> <label for="" class="Yes1">Select Yes to use standard default (i.e. no specific region specified),</label><br>
+
+        <label for="" class="N1">No</label>
+        <input type="radio" id="No" class="input" name="No"> <label for="" class="Yes1">Or No to supply a Test CICS Region Name</label><br>
+        <hr>
 
         <button class="Btn">Process</button>
+
+    
       </form>
     </div>
 </body>

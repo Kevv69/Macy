@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Firstpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,400;0,500;0,700;1,100&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,500;0,700;1,100;1,400&family=Outfit:wght@100;200;400;700&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,200;1,400;1,700&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="d1">
+        <form>
+            <label for="WSDL NAME" class="L1">WSDL NAME:</label>
+            <input type="text" id="WSDL NAME" class="input1"> <label for="text" class="L2">Enter the name of WSDL to be processed:</label>
+        </form>
+    </div>
+    <div class="d2">
+        <form action="Secondpage.html" method="get">
+        <label for="program name" class="L3">ProgramName:</label>
+        <input type="text" id="programName" class="input2"> <label for="ProgramName" class="L4">Enter the name of the program:</label>
+        
+
+        <div>
+            <label for="Application Name" class="L3">ApplicationName:</label>
+            <input type="text" id="ApplicationName" class="input2"> <label for="Application Name" class="L4">Enter the 3 chanacter application name associated with this wsdl:</label>
+        </div>
+
+        <div>
+            <label for="COBOLEnvname:" class="L3">COBOLEnvname:</label>
+            <input type="text" id="COBOLEnvname:" class="input2"> <label for="COBOLEnvname:" class="L4">Enter the 3-5 character name of the enviroment where the generated includes are to be added: (e.g. DEV, ANDEV, etc.)</label>
+        </div>
+
+        <div>
+            <label for="WSDLEnvname:" class="L3">WSDLEnvname:</label>
+            <input type="text" id="WSDLEnvname:" class="input2"> <label for="WSDLEnvname:" class="L4">Enter the 3-5 character name of the enviroment where the WSDL to be converted exists: <br> (e.g. dev, biz, css, s2b1, etc.)</label>
+        </div>
+
+        <div>
+            <label for="Request Name:" class="L3">Request Name:</label>
+            <input type="text" id="Request Name:" class="input3"> <label for="Request Name:" class="L5">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Request Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
+        </div>
+
+        <div>
+            <label for="Response Name:" class="L3">Response Name:</label>
+            <input type="text" id="Response Name:" class="input4"> <label for="Response Name:">Enter the Name of the COBOL Copy/Include that will be created for the WSDL Response Component - up to 6 characters max (the WSDL process will append 2 characters)</label>
+        </div>
+        
+        <div>
+            <label for="String Max Lenght" class="L3">String Max Lenght:</label>
+            <input type="text" id="String Max Lenght" placeholder="80" class="input2"> <label for="String Max Lenght" class="L4">Enter the Maximum Character String Lenght This WebService will support (1 - 2M): </label>
+        </div>
+
+        <div>
+            <label for="Inline Max Occurs" class="L3">Inline Max Occurs:</label>
+            <input type="text" id="Inline Max Occurs" placeholder="1" class="input2"> <label for="Inline Max Occurs" class="L4">Enter the Maximum Number of Inline Occurs This WebService will support (1 - 32760): </label>
+        </div>
+        <hr>
+
+        <div>
+            <label class="L3">DateTime EFormat</label><br>
+
+            <label for="" class="Yes">Yes</label>
+            <input type="radio" value="Yes" id="Yes" name="title" class="input"><label for="" class="Yes1">Select Yes to have the date/time as numeric (default)</label><br>
+
+            <label for="" class="Yes">No</label>
+            <input type="radio" value="No" id="No" name="title" class="input"> <label for="" class="Yes1">Or No to have the date/time as a string:</label>
+        </div>
+        <hr>
+
+
+        <div>
+            <label for="" class="L3"> Transaction ID </label><br>
+            
+            <label for="" class="Yes">Yes</label>
+            <input type="radio" id="Yes" name="title1" class="input"> <label for="" class="Yes1">Select Yes to use standard ZPIH Transaction Id (Strongly Recommended),</label><br>
+
+            <label for="" class="L3">No</label>
+            <input type="radio" id="No" name="title1" class="input"> <label for="" class="Yes1">or No to supply your own Transaction Id:</label>
+        </div>
+        <hr>
+
+        <button class="Btn">Process</button>
+      </form>
+    </div>
+</body>
+</html>

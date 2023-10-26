@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,400;0,500;0,700;1,100&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,500;0,700;1,100;1,400&family=Outfit:wght@100;200;400;700&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,200;1,400;1,700&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Secondpage.css">
+</head>
+<body>
+    <div class="">
+       <form>
+        <label for="WSDL Name:" class="L1">WSDL Name:</label>
+        <input type="text" id="WSDL Name:" class="input1"> <label for="WSDL Name:" class="L2">Enter the name of the WSDL to be created:</label>
+       </form>
+    </div>
+    <div>
+        <form action="Thirdpage.html">
+            <div>
+                <label for="ProgramName:" class="L3">ProgramName:</label>
+                <input type="text" id="ProgramName:" class="input2"> <label for="ProgramName:" class="L4">Enter the name of the program associated with this process:  </label>
+            </div>
+
+            <div>
+                <label for="ApplicationName:" class="L3">ApplicationName:</label>
+                <input type="text" id="ApplicationName:" class="input2"> <label for="ApplicationName:" class="L4">Enter the 3 chanacter application name associated with this process:</label>
+            </div>
+
+            <div>
+                <label for="SourceEnvname:" class="L3">SourceEnvname:</label>
+                <input type="text" id="SourceEnvname:" class="input2"> <label for="SourceEnvname:" class="L4">Enter the 3/5 character name of the enviroment where the COBOL Copy Module can be found (e.g. DEV or ANDEV, etc.)</label>
+            </div>
+
+            <div>
+                <label for="WSDLEnvname:" class="L3">WSDLEnvname:</label>
+                <input type="text" id="WSDLEnvname:" class="input2"> <label for="WSDLEnvname:" class="L4">Enter the 3 character name of the enviroment where the WSDL / WSBIND is to reside (e.g. DEV, BIZ, CSS, etc.)</label>
+            </div>
+
+            <div>
+                <label for="Request Name:" class="L3">Request Name:</label>
+                <input type="text" id="Request Name:" class="input2"> <label for="Request Name:" class="L4">Enter the Name of the COBOL Copy Module that describes the WSDL Request Component</label>
+            </div>
+
+            <div>
+                <label for="Response Name:" class="L3">Response Name:</label>
+                <input type="text" id="Response Name:" class="input2"> <label for="Response Name:" class="L4">Enter the Name of the COBOL Copy Module that describes the WSDL Request Component</label>
+            </div>
+
+            <div>
+                <label for="Operation Name:" class="L3">Operation Name:</label>
+                <input type="text" id="Operation Name:" class="input2"> <label for="Operation Name:" class="L4">Enter the Operation-Name for this WSDL (0 to 30 characters)</label>
+            </div>
+            <hr>
+
+            <div>
+                <label for="" class="L3">CHAR-VARYING</label> <label for="" class="L5">Compress Multiple Spaces In Text</label><br>
+
+                <label for="" class="COLLAPSE">COLLAPSE</label>
+                <input type="radio" id="COLLAPSE" name="title1" class="input"> <label for="" class="L5">Select COLLAPSE (default) unless you are very sure you know what you are doing</label><br>
+
+                <label for="" class="No">NO</label>
+                <input type="radio" id="NO" name="title1" class="input"><br>
+
+                <label for="" class="Null">Null</label>
+                <input type="radio" id="Null" name="title1" class="input"><br>
+
+                <label for="" class="bin">Binary</label>
+                <input type="radio" id="Binary" name="title1" class="input"><br>
+                <hr>
+
+                <label for="" class="L3">Transaction ID</label><br>
+
+                <label for="" class="Yes">Yes</label>
+                <input type="radio" id="Yes" class="input" name="Yes"> <label for="" class="Y1">Select Yes to use standard Zaaa Transaction Id (where aaa is the 3 character Application Name), - Strongly Recommended,</label> <br>
+
+                <label for="" class="N1">No</label>
+                <input type="radio" id="No" class="input" name="Yes"> <label for="" class="Y2">Or No to supply your own Transaction Id:</label><br>
+                <hr>
+
+                <label for="" class="L3">Specify Target Region</label><br>
+
+                <label for="" class="Yes">Yes</label>
+                <input type="radio" id="Yes" class="input" name="No"> <label for="" class="Y3">Select Yes to use standard default (i.e. no specific region specified),</label><br>
+
+                <label for="" class="N1">No</label>
+                <input type="radio" id="No" class="input" name="No"> <label for="" class="Y4">Or No to supply a Test CICS Region Name:</label><br>
+                <hr>
+
+                <button class="Btn">Process</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

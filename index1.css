@@ -1,0 +1,36 @@
+p{
+    background-color: #00008B;
+    height: 1.8rem;
+    color: white;
+    font-size: 1.3rem;
+    width: 95%;
+}
+
+h1{
+    width: 50%;
+    margin-left: 27rem;
+    color: black;
+    font-size: 25px;
+}
+
+a{
+    color: blue;
+    font-weight: bold;
+}
+a:hover{
+    color: #87CEEB;
+}
+table{
+    line-height: 2;
+}
+body{
+    font-family: 'Karla';
+}
+span{
+    border-right: 2px solid white;
+    font-size: 24px;
+    padding-right: 11rem;
+    margin-left: 1.2rem;
+}
+
+
